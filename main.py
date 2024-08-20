@@ -12,6 +12,9 @@ showfile = ""
 # files = []
 
 ALLOWED_EXTENSIONS = {'png', 'jpg', 'jpeg', 'gif'}
+for ext in list(ALLOWED_EXTENSIONS):
+    ALLOWED_EXTENSIONS.add(ext.upper())
+
 NEWEST_N_FILES = 5
 
 def get_file_response(filename):
